@@ -1,0 +1,32 @@
+<html>
+  <p>
+    Enter your info!
+  </p>
+
+  <form method='GET'>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" />
+
+    <br />
+
+    <label for="fav_color">Favorite Color</label>
+    <input type="text" id="fav_color" name="fav_color" />
+
+    <br />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <% @names_colors.each do |name, color| %>
+    <%= name %>'s favorite color is
+    :
+    <%= color %>
+    <br />
+  <% end %>
+
+</html>
