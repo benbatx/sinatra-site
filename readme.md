@@ -11,11 +11,13 @@ git pull
 git checkout -b issue-1
 ```
 
-# as you make progress
+as you make progress
+```
 git commit -am "did first part"
 git push
 git commit -am "finished issue-1, yay!"
 git push
+```
 
 make a new pull request:
 https://github.com/benbatx/sinatra-site/pulls
