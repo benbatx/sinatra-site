@@ -33,6 +33,16 @@ if you want to undo your last stash, run:
 git stash apply
 ```
 
+Ruby
+----
+
+Add the line `debugger` to drop into your code at that point
+
+Use `puts whatever.inspect` to output a variable in the terminal
+
+(short version^: `p whatever`)
+
+
 Workflow
 --------
 
