@@ -1,3 +1,7 @@
+To run: `ruby app.rb`
+
+Visit `http://localhost:4567`
+
 HTML Examples
 -------------
 
