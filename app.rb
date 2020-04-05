@@ -11,14 +11,7 @@ get('/jokes') do
   resp = HTTParty.get('http://api.icndb.com/jokes/random').parsed_response
 
   # resp looks like
-  # {
-  #      "type" => "success",
-  #     "value" => {
-  #                 "id" => 38,
-  #               "joke" => "Someone once videotaped Chuck Norris getting pissed off. It was called Walker: Texas Chain Saw Masacre.",
-  #         "categories" => []
-  #     }
-  # }
+  # { "type": "success", "value": { "id": 75, "joke": "Chuck Norris can believe it's not butter.", "categories": [] } }
 
   @joke_str = resp['value']['joke']
   erb(:jokes)

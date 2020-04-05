@@ -1,3 +1,20 @@
+HTML Examples
+-------------
+
+http://motherfuckingwebsite.com/
+https://people.xiph.org/%7Exiphmont/demo/index.html
+http://simantokoubou.jp/25.html
+
+APIS
+----
+
+https://github.com/public-apis/public-apis/blob/master/README.md
+
+You can use ones that say "Auth: No". The other columns don't matter
+
+Workflow
+--------
+
 Find an issue you want to work on:
 
 https://github.com/benbatx/sinatra-site/issues
@@ -9,7 +26,7 @@ run
 ```
 git checkout master
 git pull
-git checkout -b issue-1
+git checkout -b issue-1 # or whatever number
 ```
 
 as you make progress
@@ -22,10 +39,3 @@ git push
 
 make a new pull request:
 https://github.com/benbatx/sinatra-site/pulls
-
-HTML Examples
--------------
-
-http://motherfuckingwebsite.com/
-https://people.xiph.org/%7Exiphmont/demo/index.html
-http://simantokoubou.jp/25.html
