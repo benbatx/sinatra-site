@@ -19,6 +19,11 @@ end
 
 names_colors = {}
 get('/guestbook') do
+  # params comes from the url, for example:
+  # http://localhost:4567?first_name=ben&fav_color=purple
+  # ->
+  # params is:
+  # {"first_name" => "ben", "fav_color" => "purple"}
   first_name = params['first_name']
   fav_color = params['fav_color']
 
