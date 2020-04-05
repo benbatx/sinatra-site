@@ -1,9 +1,11 @@
 HTML Examples
 -------------
 
-http://motherfuckingwebsite.com/
-https://people.xiph.org/%7Exiphmont/demo/index.html
-http://simantokoubou.jp/25.html
+https://www.w3schools.com/html/default.asp
+
+https://neocities.org/browse
+
+https://stallman.org/
 
 APIS
 ----
