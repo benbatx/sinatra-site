@@ -11,13 +11,6 @@ https://neocities.org/browse
 
 https://stallman.org/
 
-APIS
-----
-
-https://github.com/public-apis/public-apis/blob/master/README.md
-
-You can use ones that say "Auth: No". The other columns don't matter
-
 Troubleshooting
 ---------------
 
@@ -79,3 +72,10 @@ enter:
 base: master
 compare: issue-1
 ```
+
+Fun APIS
+--------
+
+https://github.com/public-apis/public-apis/blob/master/README.md
+
+You can use ones that say "Auth: No". The other columns don't matter
