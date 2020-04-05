@@ -14,6 +14,25 @@ https://github.com/public-apis/public-apis/blob/master/README.md
 
 You can use ones that say "Auth: No". The other columns don't matter
 
+Troubleshooting
+---------------
+
+Frequently "save" your code when it kinda works by running:
+```
+git commit -am "finished a thing"
+```
+
+When something breaks, but you're not sure why, run:
+```
+git stash save
+```
+to restore to a clean slate of your last commit
+
+if you want to undo your last stash, run:
+```
+git stash apply
+```
+
 Workflow
 --------
 

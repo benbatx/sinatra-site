@@ -1,4 +1,5 @@
 const drawCircle = (x, y, radius, color) => {
+  // https://simon.html5.org/dump/html5-canvas-cheat-sheet.html
   ctx.beginPath()
   ctx.arc(x, y, radius, 0, 2 * Math.PI)
   ctx.fillStyle = color
@@ -6,29 +7,40 @@ const drawCircle = (x, y, radius, color) => {
   ctx.closePath()
 }
 
-let bounceCircleX = 0
-let bounceCircleY = 0
+let circleX = 0 // coords of center of circle
+let circleY = 0
+
 let xDir = 1 // moving right
 let yDir = 1 // moving downward
 let circleSpeed = 1/10
+let circleRadius = 50
+
 const drawFrame = (timeDiff, canvasWidth, canvasHeight) => {
   // timeDiff is the number of seconds since the last time this function was run
   //          usually a very small num
-  changeText('heyooo')
+  drawCircle(100, 100, 25, 'blue')
 
-  if (bounceCircleX > canvasWidth) {
+  if (circleX > canvasWidth) {
     xDir = -1
-  } else if (bounceCircleX < 0) {
+  } else if (circleX < 0) {
     xDir = 1
   }
-  if (bounceCircleY > canvasHeight) {
+  if (circleY > canvasHeight) {
     yDir = -1
-  } else if (bounceCircleY < 0) {
+  } else if (circleY < 0) {
     yDir = 1
   }
-  bounceCircleX += xDir * timeDiff * circleSpeed
-  bounceCircleY += yDir * timeDiff * circleSpeed
+  circleX += xDir * timeDiff * circleSpeed
+  circleY += yDir * timeDiff * circleSpeed
 
-
-  drawCircle(bounceCircleX, bounceCircleY, 50, 'green')
+  drawCircle(circleX, circleY, circleRadius, 'green')
 }
+
+document.addEventListener('click', (evt) => {
+  const distToCircle = Math.sqrt(Math.pow(evt.x - circleX, 2) + Math.pow(evt.y - circleY, 2))
+  if (distToCircle < circleRadius) {
+    changeText("you clicked the circle. good job!")
+  } else {
+    changeText(`you clicked: ${evt.x}, ${evt.y}`)
+  }
+})
