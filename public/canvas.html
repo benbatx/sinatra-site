@@ -1,0 +1,32 @@
+<html>
+  <style type="text/css">
+    canvas, html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #overlayText {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+    #overlayText {
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div id="overlayText">
+    </div>
+    <canvas>
+    </canvas>
+    <script src="/circles.js"></script>
+    <script src="/init.js"></script>
+    <script type="text/javascript">
+      drawFrameLoop()
+    </script>
+  </body>
+</html>
